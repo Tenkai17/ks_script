@@ -56,15 +56,15 @@ let ksUrl = [], ksArr = [];
 function AutoRead(){
  return new Promise((resolve) => { 
    const myRequest = {
-    url: playUrl,
-    headers: {
-      'Accept-Encoding' : `gzip, deflate`,
-      'Connection' : `close`,
-      'Accept' : `application/json`,
-      'Host' : `js2.a.yximgs.com`,
-      'User-Agent' : `kwai-ios`,
-      'Accept-Language' : `zh-Hans-CN;q=1, en-CN;q=0.9, zh-Hant-CN;q=0.8`},
-};
+      url: playUrl,
+      headers: {
+        'Cache-Control': 'no-store'
+        'Host': 'js2.a.yximgs.com'
+        'Connection': 'Keep-Alive'
+        'Accept-Encoding': 'gzip'
+        'User-Agent': 'okhttp/3.12.1'
+      },    
+    };
   $.get(myRequest, (error, response, data) => {
      if(error){
         console.log("响应数据失败："+response + "\n\n" + data);
