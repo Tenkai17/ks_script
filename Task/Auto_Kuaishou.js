@@ -67,7 +67,7 @@ function AutoRead(){
 };
   $.get(myRequest, (error, response, data) => {
      if(error){
-     console.log("响应数据失败："+response.statusCode + "\n\n" + data);
+        console.log("响应数据失败："+response + "\n\n" + data);
      }
     //console.log(response.statusCode + "\n\n" + data);
     //$.done();
