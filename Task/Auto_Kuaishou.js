@@ -58,10 +58,10 @@ function AutoRead(){
    const myRequest = {
       url: playUrl,
       headers: {
-        'Cache-Control': 'no-store'
-        'Host': 'js2.a.yximgs.com'
-        'Connection': 'Keep-Alive'
-        'Accept-Encoding': 'gzip'
+        'Cache-Control': 'no-store',
+        'Host': 'js2.a.yximgs.com',
+        'Connection': 'Keep-Alive',
+        'Accept-Encoding': 'gzip',
         'User-Agent': 'okhttp/3.12.1'
       },    
     };
